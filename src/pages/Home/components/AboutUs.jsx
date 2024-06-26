@@ -4,7 +4,7 @@ class AboutUs extends Component {
     render() { 
         return (
             <section
-                className="bg-dark py-4 d-flex align-items-center"
+                className="bg-dark-grey py-4 d-flex align-items-center"
                 style={{ minHeight: "40dvh" }}
                 id="about-us"
             >
