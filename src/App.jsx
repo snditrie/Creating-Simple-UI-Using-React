@@ -1,9 +1,45 @@
-import { useState } from 'react'
+import React from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import Home from './pages/Home/Home'
+import Dashboard from './pages/Dashboard/Dashboard'
+import Header from './shared/Header/Header'
+import Sidebar from './shared/Sidebar/Sidebar'
 
-function App() {
+class App extends React.Component {
+  state = {
+    page: <Dashboard />
+  }
+  
+  handlePages = (page) => {
+    this.setState({
+      page: page
+    })
+
+  }
+
+  navigateTo = (page) => {
+    this.setState({
+      page: page
+    })
+  }
+
+  render() { 
+    return (
+      <>
+        <div className="d-flex">
+          <Sidebar navigateTo={this.navigateTo} />
+          <main className="w-100 flex-grow-1">
+            <Header />
+            {this.state.page}
+          </main>
+        </div>
+      </>
+    )
+  }
+}
+
+function Toasts() {
   const [count, setCount] = useState(0)
 
   return (
