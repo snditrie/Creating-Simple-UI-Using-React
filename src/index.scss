@@ -3,7 +3,7 @@
 $light: #eef9ff;
 $dark: #0c0c04;
 $primary: #696969;
-$secondary: #a10861;
+$secondary: #eeeeee;
 $info: #FFDAB9;
 $success: #04c066;
 $warning: #efd103;
@@ -32,5 +32,20 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.image-container {
+  float: right;
+  width: 35%;
+}
+
+.image-container img {
+  width: 100%;
+  
+}
+.wave-img {
+  opacity: 50%;
+}
+
+
 
 @import "node_modules/bootstrap/scss/bootstrap";

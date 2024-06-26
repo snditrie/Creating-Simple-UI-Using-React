@@ -65,6 +65,14 @@ export default class Sidebar extends Component {
                         <span>Home</span>
                         </li>
                         <li
+                            onClick={() => navigateTo(<Pets />)}
+                            className="cursor-pointer">
+                            <i className="me-3">
+                                <IconPaw />
+                            </i>
+                            <span>Pets</span>
+                        </li>
+                        <li
                             onClick={() => navigateTo(<Adaption />)}
                             className="cursor-pointer"
                         >
@@ -72,14 +80,6 @@ export default class Sidebar extends Component {
                         <IconListDetails />
                         </i>
                         <span>Adoption</span>
-                        </li>
-                        <li
-                            onClick={() => navigateTo(<Pets />)}
-                            className="cursor-pointer">
-                            <i className="me-3">
-                                <IconPaw />
-                            </i>
-                            <span>Pets</span>
                         </li>
                     </ul>
                 </div>

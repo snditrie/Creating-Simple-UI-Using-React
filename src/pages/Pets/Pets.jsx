@@ -1,10 +1,11 @@
 import { Component } from "react";
+import Lists from "./components/Lists";
 
 class Pets extends Component { 
     render() { 
         return (
             <div>
-                <h1>Available Pets for Adoption</h1>
+                <Lists />
             </div>
         )
     }
