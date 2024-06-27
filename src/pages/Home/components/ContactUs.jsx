@@ -3,7 +3,7 @@ import { Component } from "react"
 export default class ContactUs extends Component {
   render() {
     return (
-      <section className="py-4" id="contact-is">
+      <section className="bg-secondary py-4" id="contact-us">
         <div className="container">
           <h2>Contact Us</h2>
           <div className="row">

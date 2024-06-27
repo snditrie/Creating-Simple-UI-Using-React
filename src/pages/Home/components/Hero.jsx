@@ -15,11 +15,9 @@ class Hero extends Component {
                         style={{ minHeight: "80dvh" }}            
                     > 
                         <div className="col-lg-6 col-12 text-center">
-                            <h2 className="display-4">
-                                Affordable and Trusted
-                            </h2>
+                            <h1 className="display-4">Welcome to <b>Chiky's Pet Paradise</b></h1>
                             <h4 className="my-4">
-                                #1 market for adopt pets, items, and grooming with affordable prices
+                                Your trusted partner in pet adoption
                             </h4>
                         </div>
                         <div className="col-lg-6 col-12">

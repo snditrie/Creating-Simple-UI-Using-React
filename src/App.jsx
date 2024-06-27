@@ -8,7 +8,7 @@ import Sidebar from './shared/Sidebar/Sidebar'
 
 class App extends React.Component {
   state = {
-    page: <Home />
+    page: <Dashboard />
   }
   
   handlePages = (page) => {

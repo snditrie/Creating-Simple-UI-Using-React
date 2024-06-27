@@ -15,22 +15,17 @@ class Navbar extends Component {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto fs-5 column-gap-4 ">
                         <li className="nav-item">
-                            <a className="nav-link active text-info" aria-current="page" href="#hero">
-                            Home
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-info" href="#tentang-kami">
+                            <a className="nav-link active text-info" href="#about-us">
                             About Us
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-info" href="#testimoni">
+                            <a className="nav-link text-info" href="#testimony">
                             Testimony
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-info" href="#kontak-kami">
+                            <a className="nav-link text-info" href="#contact-us">
                             Contact Us
                             </a>
                         </li>

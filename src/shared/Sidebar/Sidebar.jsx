@@ -15,7 +15,7 @@ import {
 } from "@tabler/icons-react"
 import Dashboard from "../../pages/Dashboard/Dashboard"
 import Home from "../../pages/Home/Home"
-import Adaption from "../../pages/Adoption/Adoption"
+import Adoption from "../../pages/Adoption/Adoption"
 import Pets from "../../pages/Pets/Pets"
 
 
@@ -28,17 +28,17 @@ export default class Sidebar extends Component {
         style={{ width: 300, minHeight: "100dvh" }}
       >
         <div className="font-logo text-center mb-5">
-          <h2 className="fs-2 text-info">
+          <h2 className="fs-2 text-info mb-1">
             <i>
-              <b>Chiky's</b> Shop
+              <b>Chiky's Pet Paradise</b>
             </i>
           </h2>
-          <h2 className="fs-6 my-4 font-primary text-info fw-bold">Backoffice V1.0.0</h2>
+          <h2 className="fs-6 my-1 font-primary text-info fw-light">v1.0.0</h2>
         </div>
         <nav>
             <ul className="d-flex flex-column gap-3 nav-list list-unstyled">
-                {/* <p onClick={() => navigateTo(<Dashboard />)}
-                    className="fw-bold cursor-pointer">Dashboard</p> */}
+            <p onClick={() => navigateTo(<Dashboard />)}
+              className="cursor-pointer fw-bold text-info my-2">Dashboard</p>
                 <li
                     className="cursor-pointer text-info"
                     data-bs-toggle="collapse"
@@ -73,7 +73,7 @@ export default class Sidebar extends Component {
                             <span>Pets</span>
                         </li>
                         <li
-                            onClick={() => navigateTo(<Adaption />)}
+                            onClick={() => navigateTo(<Adoption />)}
                             className="cursor-pointer"
                         >
                         <i className="me-3">

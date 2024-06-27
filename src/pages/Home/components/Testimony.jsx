@@ -1,26 +1,26 @@
 import { Component } from "react"
+import person from "../../../assets/images/person.svg"
 
 export default class Testimony extends Component {
   render() {
     return (
-      <section className="py-4" id="testimoni">
+      <section className="py-4" id="testimony">
         <div className="container">
-          <h2 className="text-center fw-bold mb-4">Testimoni</h2>
+          <h2 className="text-center fw-bold mb-4">Testimony</h2>
           <div className="row row-cols-1 row-cols-md-4 justify-content-center g-4">
             <div className="col">
               <div className="card h-100 border-0 shadow">
                 <img
-                  src="https://png.pngtree.com/png-vector/20230918/ourmid/pngtree-man-in-shirt-smiles-and-gives-thumbs-up-to-show-approval-png-image_10094381.png"
+                  src={person}
                   className="card-img-top rounded-4 bg-primary"
                   alt="budi"
                 />
                 <div className="card-body">
                   <blockquote className="blockquote mb-0">
                     <p>
-                      Berbelanja di Enigma Shop selalu menjadi pilihan utama
-                      saya. Produknya lengkap dan kualitasnya top!
+                      Adopting a puppy from this pet shop was a fantastic experience. The staff was knowledgeable and helped me find the perfect match. My new dog, Max, has brought so much joy into my life!
                     </p>
-                    <footer className="blockquote-footer">Budi</footer>
+                    <footer className="blockquote-footer">Eudora</footer>
                   </blockquote>
                 </div>
               </div>
@@ -28,17 +28,16 @@ export default class Testimony extends Component {
             <div className="col">
               <div className="card h-100 border-0 shadow">
                 <img
-                  src="https://i.pinimg.com/originals/c8/88/0f/c8880fd46397ea368d85e1933c274ac0.png"
+                  src={person}
                   className="card-img-top rounded-4 bg-primary"
                   alt="budi"
                 />
                 <div className="card-body">
                   <blockquote className="blockquote mb-0">
                     <p>
-                      Beli kebutuhan bulanan jadi lebih mudah dan cepat.
-                      Harganya juga oke banget.
+                      The pet shop made adopting a rabbit very easy. They even followed up with me to ensure everything was going well. My kids love our new rabbit, Thumper!
                     </p>
-                    <footer className="blockquote-footer">Sukro</footer>
+                    <footer className="blockquote-footer">Nana</footer>
                   </blockquote>
                 </div>
               </div>
@@ -46,17 +45,16 @@ export default class Testimony extends Component {
             <div className="col">
               <div className="card h-100 border-0 shadow">
                 <img
-                  src="https://i.pinimg.com/originals/c8/88/0f/c8880fd46397ea368d85e1933c274ac0.png"
+                  src={person}
                   className="card-img-top rounded-4 bg-primary"
                   alt="budi"
                 />
                 <div className="card-body">
                   <blockquote className="blockquote mb-0">
                     <p>
-                      Beli kebutuhan bulanan jadi lebih mudah dan cepat.
-                      Harganya juga oke banget.
+                      Great experience adopting a bird from this pet shop. The staff was very supportive and gave me lots of tips on how to care for my new parrot, Polly.
                     </p>
-                    <footer className="blockquote-footer">Sukro</footer>
+                    <footer className="blockquote-footer">Luoyi</footer>
                   </blockquote>
                 </div>
               </div>
@@ -64,17 +62,16 @@ export default class Testimony extends Component {
             <div className="col">
               <div className="card h-100 border-0 shadow">
                 <img
-                  src="https://i.pinimg.com/originals/c8/88/0f/c8880fd46397ea368d85e1933c274ac0.png"
+                  src={person}
                   className="card-img-top rounded-4 bg-primary"
                   alt="budi"
                 />
                 <div className="card-body">
                   <blockquote className="blockquote mb-0">
                     <p>
-                      Beli kebutuhan bulanan jadi lebih mudah dan cepat.
-                      Harganya juga oke banget.
+                      I was nervous about adopting a pet, but the staff at this shop made me feel comfortable and confident. We adopted a fish tank with a few goldfish, and the kids are absolutely thrilled.
                     </p>
-                    <footer className="blockquote-footer">Sukro</footer>
+                    <footer className="blockquote-footer">Kadita</footer>
                   </blockquote>
                 </div>
               </div>

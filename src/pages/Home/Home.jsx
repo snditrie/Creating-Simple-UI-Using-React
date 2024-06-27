@@ -13,13 +13,16 @@ class Home extends Component {
         // const {image} = this.props
         return (
             <div>
+                <div className='container-fluid pt-4 px-4 position-relative'>
                 <Navbar />
-                <Hero />                      
+                {/* <Hero />                       */}
                 <AboutUs />
                 <Testimony />
                 <ContactUs />
-                <Footer />
+                
                 {/* <h1>Home</h1> */}
+                </div>
+                <Footer />
             </div>
             
 
