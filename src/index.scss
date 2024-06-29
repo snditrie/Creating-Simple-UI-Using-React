@@ -2,62 +2,54 @@
 
 $light: #eef9ff;
 $dark: #0c0c04;
-$primary: #696969;
+$primary: #bcc5ce;
 $secondary: #eeeeee;
-$info: #FFDAB9;
+$info: #794e40;
 $success: #04c066;
-$warning: #efd103;
+$warning: #f05080;
 $danger: #ff1521;
 
 body {
   font-family: "Montserrat", sans-serif;
 }
 
-.spinner-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
 
-.image-container {
-  float: right;
-  width: 35%;
-}
-
-.image-container img {
-  width: 100%;
-  
-}
 .wave-img {
   opacity: 100%;
 }
 
 #category-select {
-  width: 100px; /* Set the desired width */
-  height: 40px; /* Set the desired height */
-  font-size: 16px; /* Adjust font size if needed */
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
 
   option {
-    padding: 10px; /* Adjust padding for options */
-    font-size: 16px; /* Adjust font size for options */
+    padding: 10px;
+    font-size: 16px;
   }
 }
 
+.animated-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  animation: slide-in 5s linear infinite;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
-
+@keyframes slide-in {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(90% - 200px); 
+  }
+}
 
 @import "node_modules/bootstrap/scss/bootstrap";

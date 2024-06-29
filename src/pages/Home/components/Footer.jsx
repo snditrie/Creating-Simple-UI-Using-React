@@ -1,10 +1,4 @@
 import { Component } from "react"
-import {
-  IconBrandFacebook,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-  IconBrandTwitter,
-} from "@tabler/icons-react"
 
 export default class Footer extends Component {
   render() {

@@ -19,7 +19,6 @@ class Animals extends Component {
   render() {
     const { image, name, category, description}= this.props
 
-
     return (
       <div className="card shadow-sm" style={{width: '18rem', height: '35rem'}}>
         
@@ -32,7 +31,6 @@ class Animals extends Component {
 
         <div className="card-body text-bg-info">
           <h2 className="card-title">{name}</h2>
-          {/* <h5 className="card-title fw-light">{category}</h5> */}
           <h6 className="card-title fw-light">{description}</h6>
         </div>
 

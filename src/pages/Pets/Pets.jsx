@@ -1,6 +1,6 @@
 import { Component } from "react"
 import Lists from "./components/Lists"
-import Loading from "../../shared/Loading/Loading"
+import Loading from "../../shared/Animations/LoadingAnimation"
 
 class Pets extends Component { 
     state = {

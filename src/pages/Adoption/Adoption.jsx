@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import Loading from '../../shared/Loading/Loading'
+import Loading from '../../shared/Animations/LoadingAnimation'
 import AdoptForm from './components/AdoptForm'
 import AdoptList from './components/AdoptList'
 
@@ -42,7 +42,6 @@ class Adoption extends Component {
   handleSubmit = (event) => {
     event.preventDefault()
 
-    // error handling
     let errors = {}
     if (this.state.form.name === "") {
       errors.name = "Name is required"
@@ -54,13 +53,11 @@ class Adoption extends Component {
       errors: errors,
     })
     if (Object.keys(errors).length > 0) return
-    // error
 
     const todos = this.state.todos
     this.setState({ isLoading: true })
     setTimeout(() => {
       if (this.state.form.id) {
-        // TODO: Update
         const index = todos.findIndex((todo) => todo.id === this.state.form.id)
         const todo = {
           ...this.state.form,
@@ -71,7 +68,6 @@ class Adoption extends Component {
           message: "Update succeeded!",
         })
       } else {
-        // TODO: Create
         const todo = {
           ...this.state.form,
           id: new Date().getMilliseconds().toString()
@@ -142,7 +138,6 @@ class Adoption extends Component {
 
     return (
       <div className='container-fluid pt-4 px-4 position-relative' >
-        {/* Toasts */}
         <div className={`${this.state.message && "show"} toast position-absolute top-0 end-0 me-4 mt-4 align-items-center text-bg-primary border-0`} role="alert" aria-live="assertive" aria-atomic="true">
           <div className="d-flex">
             <div className="toast-body">
@@ -154,7 +149,6 @@ class Adoption extends Component {
         <div className="text-center text-bg-primary text-info p-1">
             <h1>Lets Adopt!</h1>
         </div>
-        {/* Form */}
         <AdoptForm
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
@@ -164,7 +158,6 @@ class Adoption extends Component {
           errors={this.state.errors}
         />
 
-        {/* List */}
         {
           this.state.isLoading
           &&

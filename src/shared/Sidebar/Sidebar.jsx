@@ -1,22 +1,17 @@
 import PropTypes from "prop-types"
 import { Component } from "react"
 import {
-  IconAccessible,
   IconApps,
-  IconAsset,
   IconChevronDown,
-  IconDoorExit,
   IconHome2,
   IconListDetails,
-  IconReceipt,
-  IconUser,
-  IconUsers,
   IconPaw,
 } from "@tabler/icons-react"
 import Dashboard from "../../pages/Dashboard/Dashboard"
 import Home from "../../pages/Home/Home"
 import Adoption from "../../pages/Adoption/Adoption"
 import Pets from "../../pages/Pets/Pets"
+import image from "../../assets/images/PawTopia.png"
 
 
 export default class Sidebar extends Component {
@@ -28,17 +23,14 @@ export default class Sidebar extends Component {
         style={{ width: 300, minHeight: "100dvh" }}
       >
         <div className="font-logo text-center mb-5">
-          <h2 className="fs-2 text-info mb-1">
-            <i>
-              <b>Chiky's Pet Paradise</b>
-            </i>
-          </h2>
-          <h2 className="fs-6 my-1 font-primary text-info fw-light">v1.0.0</h2>
+          <img src={image} alt="pawtopia"
+            style={{ width: '100%', height: 'auto' }}
+          />
         </div>
         <nav>
             <ul className="d-flex flex-column gap-3 nav-list list-unstyled">
             <p onClick={() => navigateTo(<Dashboard />)}
-              className="cursor-pointer fw-bold text-info my-2">Dashboard</p>
+              className="cursor-pointer fs-5 fw-bold text-info my-0">Dashboard</p>
                 <li
                     className="cursor-pointer text-info"
                     data-bs-toggle="collapse"
